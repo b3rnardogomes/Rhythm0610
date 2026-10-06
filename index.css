@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("./fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+
+/* ====================
+   CABEÇALHO
+==================== */
+
+header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 0 5%;
+    gap: 40px;
+
+    background-color: black;
+}
+
+header button {
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ====================
+   ÁREA PRINCIPAL
+==================== */
+
+main {
+    width: 500px;
+    max-width: 90%;
+
+    margin: 70px auto;
+    padding: 45px 80px;
+
+    background-color: #000000;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ====================
+   LOGO
+==================== */
+
+main img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+}
+
+
+/* ====================
+   TÍTULO
+==================== */
+
+main h1 {
+    font-size: 32px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-top: 10px;
+
+    color: #b3b3b3;
+
+    margin-bottom: 30px;
+}
+
+
+/* ====================
+   FORMULÁRIO
+==================== */
+
+form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+    margin-bottom: 20px;
+
+    background-color: #242424;
+
+    color: white;
+
+    border: 1px solid #727272;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: white;
+}
+
+input::placeholder {
+    color: #a7a7a7;
+}
+
+
+/* ====================
+   BOTÃO CADASTRAR
+==================== */
+
+#btn-cadastro {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-image:
+        linear-gradient(to right, #1A1A1A, #FFFFFF);
+
+    color: #000000;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#btn-cadastro:hover {
+    background-color: #1fdf64;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    height: 45px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-image: linear-gradient(
+        90deg,
+        #ffffff,
+        #777777,
+        #ffffff
+    );
+
+    color: black;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.04);
+}

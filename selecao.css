@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 5%;
+
+    background-image: linear-gradient(
+        black,
+        black,
+        rgb(29, 29, 29)
+    );
+}
+
+header > img {
+    width: 130px;
+    height: 60px;
+
+    object-fit: contain;
+}
+
+
+
+main {
+    width: 900px;
+    max-width: 92%;
+
+    margin: 70px auto;
+
+    padding: 40px 50px;
+
+    background-image: url("./fundo2.png");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(80, 80, 80, 0.5);
+}
+
+
+
+#texto {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#slogan {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#texto p {
+    font-size: 15px;
+}
+
+
+
+#escolha {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+
+.genero {
+    width: 100%;
+    height: 180px;
+
+    padding: 0;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    background-color: #000;
+    color: white;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, border 0.2s ease, opacity 0.2s ease;
+}
+
+/* Imagens */
+
+.genero img {
+    width: 100%;
+    height: 140px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.genero p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.genero:hover {
+    transform: scale(1.03);
+}
+
+.genero.selecionado {
+    border: 3px solid transparent;
+    background:
+        linear-gradient(#000, #000) padding-box,
+        linear-gradient(90deg, #ffffff, #777777, #ffffff) border-box;
+    transform: scale(1.03);
+}
+
+
+
+
+.avancar {
+    grid-column: 1 / -1;
+
+    justify-self: center;
+
+    margin-top: 10px;
+
+    width: 180px;
+    height: 45px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: white;
+    color: black;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+#avancar:hover {
+    transform: scale(1.04);
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    height: 45px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-image: linear-gradient(
+        90deg,
+        #ffffff,
+        #777777,
+        #ffffff
+    );
+
+    color: black;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.04);
+}
